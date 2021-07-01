@@ -16,13 +16,18 @@ This module provides learners with an approachable introduction to the R languag
 
 ## Content
 
+* :book:  [What is R?](#what-is-r)
+* :book: [What is RStudio?](#what-is-rstudio)
+* :desktop_computer: [Starting RStudio](#starting-rstudio)
+
+
 ### What is R?
 
 R is a statistical programming language.  As a programming language, R requires that you write code that instructs a computer in what to do.  It's not point-and-click software like Excel or SPSS.
 
 R code looks something like this:
 
-```
+```R
 library(tidyverse)
 breast_cancer_data <- read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00451/dataR2.csv")
 hist(breast_cancer_data$Resistin)
@@ -33,7 +38,7 @@ Ideally, R code includes helpful hints along the way to help future data users u
 
 For example, the following may be a bit easier to understand, even if you are brand new to R:
 
-```
+```R
 # tidyverse has helpful functions we'll use throughout the analysis
 library(tidyverse)
 
@@ -65,13 +70,13 @@ On the other hand, you could run the same code in RStudio and see something like
 
 Here, you can save your code for reuse later (it's currently "Untitled" and unsaved), get a sneak peek at the data (116 rows of 10 columns), see the plot in the same window as everything else, and also have many other helpful tools, like a file browser, help tab, history of commands you've run recently, and more.  RStudio is the preferred method for most uses of R, and it's generally what we use to teach.
 
-## Using R and RStudio
+## Starting RStudio
 
-You don't have to have R and RStudio installed on your local computer to learn how to use this pair of tools.  We've provided a simple environment you can use.  It may take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).
+You don't have to have R and RStudio installed on your local computer to learn how to use this pair of tools.  We've provided a simple environment you can use.  It will probably take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).
 
 Click below and an RStudio environment will open in your browser window.  We suggest using Chrome for this!
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio)  **<- Click here!**
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
 
 While you wait for that to load, come back here and read a bit more.
 
