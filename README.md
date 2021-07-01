@@ -40,15 +40,19 @@ For example, the following may be a bit easier to understand, even if you are br
 
 ```R
 # tidyverse has helpful functions we'll use throughout the analysis
+
 library(tidyverse)
 
 # bring in the data from UCI.
+
 breast_cancer_data <- read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00451/dataR2.csv")
 
 # Create a histogram of resistin values
+
 hist(breast_cancer_data$Resistin)
 
 # Show quartiles / mean of HOMA values
+
 summary(breast_cancer_data$HOMA)
 ```
 
