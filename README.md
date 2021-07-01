@@ -1,5 +1,8 @@
 # Intro to R and RStudio
-## Expanding Your Toolset
+
+<div style="background-color:#e0ffe0;
+padding: 1em;
+border: 1px solid grey;">
 
 ## Overview
 
@@ -14,11 +17,15 @@ This module provides learners with an approachable introduction to the R languag
 * Describe what R is and what RStudio is
 * Explain why using R and RStudio can improve research
 
+</div>
+
 ## Content
 
-* :book:  [What is R?](#what-is-r)
-* :book: [What is RStudio?](#what-is-rstudio)
-* :desktop_computer: [Starting RStudio](#starting-rstudio)
+Feel free to check these off as you go!
+
+* [ ]:book:  [What is R?](#what-is-r)
+* [ ]:book: [What is RStudio?](#what-is-rstudio)
+* [ ]:desktop_computer: [Starting RStudio](#starting-rstudio)
 
 
 ### What is R?
@@ -64,13 +71,15 @@ RStudio is an IDE, or Integrated Development Environment, which pulls together (
 
 For example, I could include the code mentioned above in a simple R console, which is what you get when you install R by itself.
 
-![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.png?raw=true)
+|![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.png?raw=true)|
+|--|
 
 Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell anything else about the breast_cancer_data datset.  What other variables are there?  How many rows in the data?  How can I get more information on how to use the `hist` command?  Using the R.app or R console tool is very bare bones.
 
 On the other hand, you could run the same code in RStudio and see something like this:
 
-![RStudio](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio.png?raw=true)
+|![RStudio](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio.png?raw=true)|
+|--|
 
 Here, you can save your code for reuse later (it's currently "Untitled" and unsaved), get a sneak peek at the data (116 rows of 10 columns), see the plot in the same window as everything else, and also have many other helpful tools, like a file browser, help tab, history of commands you've run recently, and more.  RStudio is the preferred method for most uses of R, and it's generally what we use to teach.
 
@@ -93,8 +102,9 @@ You can run R and RStudio:
 
 While things are loading, you might see an image like this, and it might stay this way for a few minutes.  Be patient!  If you have a few friends to do this together with, it can help speed things up, since the environment will have been recently used and ready to deploy more quickly.
 
-![Pangeo Load Screen](https://github.com/arcus/education_r_intensive/blob/main/images/pangeo.png?raw=true)
+|![Pangeo Load Screen](https://github.com/arcus/education_r_intensive/blob/main/images/pangeo.png?raw=true)|
+|--|
 
 Once your environment has loaded, you will be able to see something like the following:
 
-![Pangeo Load Screen](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_pangeo.png?raw=true)
+![RStudio Environment](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_pangeo.png?raw=true)
