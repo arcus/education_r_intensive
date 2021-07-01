@@ -71,7 +71,7 @@ You don't have to have R and RStudio installed on your local computer to learn h
 
 Click below and an RStudio environment will open in your browser window.  We suggest using Chrome for this!
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio)
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio)  **<- Click here!**
 
 While you wait for that to load, come back here and read a bit more.
 
@@ -85,3 +85,7 @@ You can run R and RStudio:
 While things are loading, you might see an image like this, and it might stay this way for a few minutes.  Be patient!  If you have a few friends to do this together with, it can help speed things up, since the environment will have been recently used and ready to deploy more quickly.
 
 ![Pangeo Load Screen](https://github.com/arcus/education_r_intensive/blob/main/images/pangeo.png?raw=true)
+
+Once your environment has loaded, you will be able to see something like the following:
+
+![Pangeo Load Screen](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_pangeo.png?raw=true)
