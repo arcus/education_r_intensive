@@ -55,12 +55,33 @@ RStudio is an IDE, or Integrated Development Environment, which pulls together (
 
 For example, I could include the code mentioned above in a simple R console, which is what you get when you install R by itself.
 
-![R.app, or the R Console](images/r_console.png)
+![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.png?raw=true)
 
 Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell anything else about the breast_cancer_data datset.  What other variables are there?  How many rows in the data?  How can I get more information on how to use the `hist` command?  Using the R.app or R console tool is very bare bones.
 
 On the other hand, you could run the same code in RStudio and see something like this:
 
-![RStudio](images/rstudio.png)
+![RStudio](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio.png?raw=true)
 
 Here, you can save your code for reuse later (it's currently "Untitled" and unsaved), get a sneak peek at the data (116 rows of 10 columns), see the plot in the same window as everything else, and also have many other helpful tools, like a file browser, help tab, history of commands you've run recently, and more.  RStudio is the preferred method for most uses of R, and it's generally what we use to teach.
+
+## Using R and RStudio
+
+You don't have to have R and RStudio installed on your local computer to learn how to use this pair of tools.  We've provided a simple environment you can use.  It may take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).
+
+Click below and an RStudio environment will open in your browser window.  We suggest using Chrome for this!
+
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio)
+
+While you wait for that to load, come back here and read a bit more.
+
+You can run R and RStudio:
+
+* from your local computer (download a Windows or Mac version)
+* on a cloud service provider like [RStudio.cloud](https://rstudio.cloud)
+* on a server that your research center provides
+* on a temporary environment someone prepares for you, like our Pangeo Binder environment
+
+While things are loading, you might see an image like this, and it might stay this way for a few minutes.  Be patient!  If you have a few friends to do this together with, it can help speed things up, since the environment will have been recently used and ready to deploy more quickly.
+
+![Pangeo Load Screen](https://github.com/arcus/education_r_intensive/blob/main/images/pangeo.png?raw=true)
