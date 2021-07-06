@@ -15,6 +15,7 @@ This module provides learners with an approachable introduction to the R languag
 **Learning Objectives**:  After completion of this module, learners will be able to:
 
 * Describe what R is and what RStudio is
+* Recognize an R script, open it in RStudio, and run commands
 * Explain why using R and RStudio can improve research
 
 </div>
@@ -23,10 +24,12 @@ This module provides learners with an approachable introduction to the R languag
 
 Feel free to check these off as you go!
 
-* [ ] :book: 5 minute read: [What is R?](#what-is-r)
-* [ ] :book: 5 minute read: [What is RStudio?](#what-is-rstudio)
-* [ ] :desktop_computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
-* [ ] :desktop_computer: 10 minute hands-on activity: [Using a File](#using-a-file)
+* <input type="checkbox"> :book: 5 minute read: [What is R?](#what-is-r)
+* <input type="checkbox"> :book: 5 minute read: [What is RStudio?](#what-is-rstudio)
+* <input type="checkbox"> :desktop_computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
+* <input type="checkbox"> :desktop_computer: 10 minute hands-on activity: [Using a File](#using-a-file)
+* <input type="checkbox"> *Optional* :film_strip: 10 minute video demonstrating hands-on activities
+* <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#why-use-r-and-rstudio)
 
 ### What is R?
 
@@ -65,6 +68,8 @@ summary(breast_cancer_data$HOMA)
 
 You can write R code and execute it in many ways, including using the command line, the R console, and in a Jupyter notebook.  Here, however, we're going to concentrate on using RStudio.
 
+[Go back to the table of contents](#content)
+
 ### What is RStudio?
 
 RStudio is an **IDE**, or **Integrated Development Environment**, which pulls together (integrates) useful tools like help files, image viewers,  data previews, and version control for people writing (developing) code, and it puts all these tools together in a visually pleasing and helpful environment.  It's an add-on tool that makes working with R easier because it gives extra help and context.
@@ -100,6 +105,8 @@ Using RStudio, you:
   - and much more!  
 
 RStudio is the preferred method for most uses of R, and it's generally what we use to teach.
+
+[Go back to the table of contents](#content)
 
 ## Starting RStudio
 
@@ -151,6 +158,8 @@ Take a look around.  What do you see?  How would you describe the layout of pane
 
 Try describing RStudio's appearance out loud to yourself.  This may seem silly but it is another way to consolidate your learning.
 
+[Go back to the table of contents](#content)
+
 ## Using a File
 
 Before you are ready to write your own code, you might find it useful to work with an existing file.
@@ -169,3 +178,7 @@ Pro tip:  You'll recognize an R script because it ends in `.R`!</div>
 In the lower right of your RStudio window, you should see a pane that has tabs marked "Files", "Plots", "Packages", "Help", and "Viewer".  Click on the "Files" tab and find the R script.  Remember that R scripts end with the file extension `.R`.
 
 Did you find it?  It's called .  Click on the file name and it will open in your "Source" pane, which will appear now that there's an open file.
+
+
+
+[Go back to the table of contents](#content)
