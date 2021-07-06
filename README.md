@@ -26,10 +26,15 @@ Feel free to check these off as you go!
 
 * <input type="checkbox"> :book: 5 minute read: [What is R?](#what-is-r)
 * <input type="checkbox"> :book: 5 minute read: [What is RStudio?](#what-is-rstudio)
-* <input type="checkbox"> :desktop_computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
-* <input type="checkbox"> :desktop_computer: 10 minute hands-on activity: [Using a File](#using-a-file)
-* <input type="checkbox"> *Optional* :film_strip: 10 minute video demonstrating hands-on activities
+* <input type="checkbox"> :computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
+* <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#using-a-file)
+* <input type="checkbox"> *Optional* :movie_camera: 10 minute video demonstrating hands-on activities
 * <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#why-use-r-and-rstudio)
+* <input type="checkbox"> :computer: 5 minute review of helpful materials in RStudio
+* <input type="checkbox"> *Optional* :open_file_folder: Additional Resources:
+  - [Why R?] https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s (watch for around 3-4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
+  - [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
+
 
 ### What is R?
 
@@ -135,9 +140,9 @@ You can run R and RStudio:
 
 A to-do list for you to consider:
 
-* [ ] Try installing [R](https://cran.rstudio.com/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download) to your computing device.
-* [ ] Not ready to commit to downloading R and RStudio yet?  Create a free [RStudio.cloud](https://rstudio.cloud) account!
-* [ ] Ask your colleagues who use R and RStudio where they do their work in R, and if there are any steps you need to take to get access (like request access to a server at your lab or workplace)
+* <input type="checkbox"> Try installing [R](https://cran.rstudio.com/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download) to your computing device.
+* <input type="checkbox"> Not ready to commit to downloading R and RStudio yet?  Create a free [RStudio.cloud](https://rstudio.cloud) account!
+* <input type="checkbox"> Ask your colleagues who use R and RStudio where they do their work in R, and if there are any steps you need to take to get access (like request access to a server at your lab or workplace)
 
 </div>
 
