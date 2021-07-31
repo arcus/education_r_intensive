@@ -98,17 +98,18 @@ I could include the code above in a simple **R console**, which is what you get 
 |![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.gif?raw=true)|
 |--|
 
-Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell anything else about the `breast_cancer_data` datset.  
+Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell much more about the `breast_cancer_data` datset.  
 
 * What other variables are there?  
-* How many rows in the data?  
-* How can I get more information on how to use the `hist` command?  
+* How many rows are in the data?  
+* How can I get more information on how to use the `hist` command?
+* How can I save my work for later re-use and expansion?
 
 Using the R.app or R console tool means very basic, bare-bones support for you as someone who is trying to write code.
 
 On the other hand, you could run the same code in RStudio and see something like this:
 
-|![RStudio](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio.png?raw=true)|
+|![RStudio](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio.gif?raw=true)|
 |--|
 
 Using RStudio, you:
