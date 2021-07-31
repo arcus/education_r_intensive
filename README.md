@@ -6,7 +6,7 @@ border: 1px solid grey;">
 
 ## Overview
 
-This module provides learners with an approachable introduction to the R language and the RStudio IDE.
+This module provides learners with an approachable introduction to the R language and the RStudio IDE, including hands-on practice appropriate for someone who has never used R or RStudio.
 
 **Estimated time to completion**: 1 hour
 
@@ -22,11 +22,12 @@ This module provides learners with an approachable introduction to the R languag
 
 ## Content
 
-Feel free to check these off as you go!
+Feel free to check these off as you go!  
 
+* <input type="checkbox"> :computer: 2 minute preparation for the hands-on activity: [Lesson Preparation](#lesson-preparation)
 * <input type="checkbox"> :book: 5 minute read: [What is R?](#what-is-r)
 * <input type="checkbox"> :book: 5 minute read: [What is RStudio?](#what-is-rstudio)
-* <input type="checkbox"> :computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
+* <input type="checkbox"> :computer: 5 minute hands-on activity: [Starting RStudio](#starting-rstudio)
 * <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#using-a-file)
 * <input type="checkbox"> *Optional* :movie_camera: 10 minute video demonstrating hands-on activities
 * <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#why-use-r-and-rstudio)
@@ -35,25 +36,36 @@ Feel free to check these off as you go!
   - [Why R?] https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s (watch for around 3-4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
   - [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
 
+### Lesson Preparation
+
+If you intend to do the hands on activity in this module, we have a bit of preparation for you to do now.
+
+Because it can take a few minutes for the environment to be created, we suggest you click on the link that will start up the activity.
+
+It will open in a new tab or window, and you can simply return here to continue learning, while the environment finishes loading.
+
+Here's the link.  You don't have to do anything except come back here once the link opens in a new tab or window.
+
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
 
 ### What is R?
 
-R is a statistical programming language.  As a programming language, R requires that you write code that instructs a computer in what to do.  It's not point-and-click software like Excel or SPSS.
+R is a statistical programming language.  As a programming language, R requires that you write **code** that instructs a computer in what to do.  It's not point-and-click software like Excel or SPSS.
 
-R code looks something like this:
+R code looks something like this (you can scroll to the right to see the long url in the second line of consolidate):
 
-```R
+```
 library(tidyverse)
 breast_cancer_data <- read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00451/dataR2.csv")
 hist(breast_cancer_data$Resistin)
 summary(breast_cancer_data$HOMA)
 ```
 
-Ideally, R code includes helpful hints along the way to help future data users understand what's happening.
+Ideally, R code includes helpful hints along the way to help future data users understand what's happening.  We can do that using **comments**, which are lines that the computer knows to ignore and not treat as code.
 
 For example, the following may be a bit easier to understand, even if you are brand new to R:
 
-```R
+```
 # tidyverse has helpful functions we'll use throughout the analysis
 
 library(tidyverse)
@@ -79,9 +91,11 @@ You can write R code and execute it in many ways, including using the command li
 
 RStudio is an **IDE**, or **Integrated Development Environment**, which pulls together (integrates) useful tools like help files, image viewers,  data previews, and version control for people writing (developing) code, and it puts all these tools together in a visually pleasing and helpful environment.  It's an add-on tool that makes working with R easier because it gives extra help and context.
 
-For example, I could include the code mentioned above in a simple R console, which is what you get when you install R by itself.  In this example shown below, I'm **not** using RStudio.
+#### What if I Don't Use RStudio?
 
-|![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.png?raw=true)|
+I could include the code above in a simple **R console**, which is what you get when you install R by itself without using RStudio.  In this example shown below, I'm **not** using RStudio.
+
+|![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.gif?raw=true)|
 |--|
 
 Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell anything else about the `breast_cancer_data` datset.  
