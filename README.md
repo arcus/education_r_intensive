@@ -24,7 +24,7 @@ This module provides learners with an approachable introduction to the R languag
 
 </div>
 
-## Content
+## Contents
 
 Feel free to check these off as you go!  
 
@@ -41,7 +41,8 @@ Feel free to check these off as you go!
     - [Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (watch for around 3-4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
     - [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
 
-### Lesson Preparation
+## Lesson Preparation
+
 *2 minute hands-on*
 
 If you intend to do the hands on activity in this module, we have a bit of preparation for you to do now.
@@ -54,7 +55,8 @@ Here's the link.  You don't have to do anything except come back here once the l
 
 [![Link to start Binder environment](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
 
-### What is R?
+## What is R?
+
 *5 minute read*
 
 R is a statistical programming language.  As a programming language, R requires that you write **code** that instructs a computer in what to do.  It's not point-and-click software like Excel or SPSS.
@@ -103,12 +105,13 @@ You can write R code and execute it in many ways, including using the command li
 
 [Go back to the table of contents](#content)
 
-### What is RStudio?
+## What is RStudio?
+
 *10 minute read*
 
 RStudio is an **IDE**, or **Integrated Development Environment**, which pulls together (integrates) useful tools like help files, image viewers,  data previews, and version control for people writing (developing) code, and it puts all these tools together in a visually pleasing and helpful environment.  It's an add-on tool that makes working with R easier because it gives extra help and context.
 
-#### Without RStudio
+### Without RStudio
 
 We could run the code above in a simple **R console**, which is what you get when you install R by itself without using RStudio.  This isn't the most user friendly experience! In the screen recording shown below, we are **not** using RStudio, but rather the R Console.
 
@@ -123,6 +126,8 @@ Above, you can see that the R console had to open a new program (in a Mac, it's 
 * How can I save my work for later re-use and expansion?
 
 Using the R.app or R console tool means very basic, bare-bones support for you as someone who is trying to write code.
+
+### With RStudio
 
 On the other hand, you could run the same code in RStudio and see something like this:
 
@@ -146,6 +151,7 @@ RStudio is the preferred method for most uses of R, and it's generally what we u
 [Go back to the table of contents](#content)
 
 ## Starting RStudio
+
 *10 minutes hands-on*
 
 You don't have to have R and RStudio installed on your local computer to learn how to use them.  We've provided a simple environment you can use.  It will probably take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).  
@@ -163,6 +169,7 @@ padding: 1em;
 border: 1px solid grey;">
 
 ### While You're Waiting...
+
 Do you wonder where you can install R and RStudio, and how much they'll cost your lab?
 
 These are free, open source software (**FOSS**), and both R and RStudio can be installed in a number of different kinds of systems.
@@ -202,6 +209,7 @@ Try describing RStudio's appearance out loud to yourself.  This may seem silly b
 [Go back to the table of contents](#content)
 
 ## Using a File
+
 *10 minutes hands-on*
 
 Before you are ready to write your own code, you might find it useful to work with an existing file.
@@ -262,6 +270,7 @@ What does the `hist` command accomplish?  The `summary` command? `View`?
 [Go back to the table of contents](#content)
 
 ## RStudio Features
+
 *5 minute hands-on*
 
 We're only going to touch on three of many useful tools here.  When time permits, you may want to explore more.
@@ -293,6 +302,7 @@ Experiment with editor settings (font size and theme), and if you want to try it
 [Go back to the table of contents](#content)
 
 ## Terminology
+
 *5 minute read*
 
 * code: computer instructions written with specific syntax rules: `summary(patients$age)`
