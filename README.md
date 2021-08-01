@@ -28,12 +28,12 @@ This module provides learners with an approachable introduction to the R languag
 
 Feel free to check these off as you go!  
 
-* <input type="checkbox"> :computer: 2 minute hands-on activity: [Lesson Preparation](#lesson-preparation)
-* <input type="checkbox"> :book: 5 minute read: [What is R?](#what-is-r)
-* <input type="checkbox"> :book: 10 minute read: [What is RStudio?](#what-is-rstudio)
-* <input type="checkbox"> :computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
-* <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#using-a-file)
-* <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#why-use-r-and-rstudio)
+* <input type="checkbox"> :computer: 2 minute hands-on activity: [Lesson Preparation](#Lesson-Preparation)
+* <input type="checkbox"> :book: 5 minute read: [What is R?](#What-is-R)
+* <input type="checkbox"> :book: 10 minute read: [What is RStudio?](#What-is-RStudio)
+* <input type="checkbox"> :computer: 10 minute hands-on activity: [Starting RStudio](#Starting-RStudio)
+* <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#Using-a-File)
+* <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#Why-Use-R-and-RStudio)
 * <input type="checkbox"> :computer: 5 minute hands-on activity: [RStudio Features](#rstudio-features)
 * <input type="checkbox"> :book: 5 minute read: [Terminology](#terminology)
 * <input type="checkbox"> *Optional* :open_file_folder: Additional Resources:
@@ -268,6 +268,18 @@ It won't hurt to run these lines several times, so try various methods!
 What does the `hist` command accomplish?  The `summary` command? `View`?  
 
 [Go back to the table of contents](#content)
+
+## Why Use R and RStudio?
+
+Fine, you now know a bit more about R and RStudio, but why does this matter?  You may already know how to conduct statistical data analysis in tools like SPSS, Excel, or other software.  Why, then, learn R?
+
+R and other free, open source, and scripted (code-based) methods of data analysis are widely considered more reproducible because:
+
+* Anyone can obtain the software needed to use R scripts, with no license cost.
+* Operations you perform to data are recorded in a script, which means they are not lost to history in the same way you might forget to precisely record a step you took in, say, Excel.
+* Scripted languages can do multiple stages of data analysis, such as downloading data, cleaning and reshaping data, performing statistical tests, displaying data visualizations, and more.  
+
+There are many reasons why the research community is pivoting to languages like R.  While learning a new technical skill can be time consuming, working with R will pay off in the long run, because it makes it easier for you to re-run your analyses, describe your methods precisely, share your work with colleagues, and meet the requirements of funders and publications when it comes to reproducible research.
 
 ## RStudio Features
 
