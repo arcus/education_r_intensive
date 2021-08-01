@@ -10,13 +10,17 @@ This module provides learners with an approachable introduction to the R languag
 
 **Estimated time to completion**: 1 hour
 
-**Pre-requisites**: It is helpful if learners have used data in a tabular (table-shaped) format, with rows and columns.  Examples of this kind of data include comma separated values files (.csv) and spreadsheets (for example, Microsoft Excel).  Learners do *not* need to have access to R or RStudio on their own computers.
+**Pre-requisites**: It is helpful if learners have used data in a tabular (table-shaped) format, with rows and columns.  Examples of this kind of data include comma separated values files (.csv) and spreadsheets (for example, Microsoft Excel).  Learners do *not* need to have access to R or RStudio on their own computers.  
+
+**Format**: This module uses text, still images, and video.  Audio is optional.
 
 **Learning Objectives**:  After completion of this module, learners will be able to:
 
 * Describe what R is and what RStudio is
-* Recognize an R script, open it in RStudio, and run commands
-* Explain why using R and RStudio can improve research
+* Understand what a script is and how using a script can improve research
+* Execute given R code within RStudio
+* Explain what a data frame is
+* Use the Environment tab within RStudio to examine a data frame
 
 </div>
 
@@ -24,19 +28,21 @@ This module provides learners with an approachable introduction to the R languag
 
 Feel free to check these off as you go!  
 
-* <input type="checkbox"> :computer: 2 minute preparation for the hands-on activity: [Lesson Preparation](#lesson-preparation)
+* <input type="checkbox"> :computer: 2 minute hands-on activity: [Lesson Preparation](#lesson-preparation)
 * <input type="checkbox"> :book: 5 minute read: [What is R?](#what-is-r)
-* <input type="checkbox"> :book: 5 minute read: [What is RStudio?](#what-is-rstudio)
-* <input type="checkbox"> :computer: 5 minute hands-on activity: [Starting RStudio](#starting-rstudio)
+* <input type="checkbox"> :book: 10 minute read: [What is RStudio?](#what-is-rstudio)
+* <input type="checkbox"> :computer: 10 minute hands-on activity: [Starting RStudio](#starting-rstudio)
 * <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#using-a-file)
-* <input type="checkbox"> *Optional* :movie_camera: 10 minute video demonstrating hands-on activities
 * <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#why-use-r-and-rstudio)
-* <input type="checkbox"> :computer: 5 minute review of helpful materials in RStudio
+* <input type="checkbox"> :computer: 5 minute hands-on activity: [RStudio Features](#rstudio-features)
+* <input type="checkbox"> :book: 5 minute read: [Terminology](#terminology)
 * <input type="checkbox"> *Optional* :open_file_folder: Additional Resources:
-  - [Why R?] https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s (watch for around 3-4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
-  - [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
+    - <input type="checkbox"> *Optional* :movie_camera: 10 minute video demonstrating hands-on activities
+    - [Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (watch for around 3-4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
+    - [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
 
 ### Lesson Preparation
+*2 minute hands-on*
 
 If you intend to do the hands on activity in this module, we have a bit of preparation for you to do now.
 
@@ -46,13 +52,14 @@ It will open in a new tab or window, and you can simply return here to continue 
 
 Here's the link.  You don't have to do anything except come back here once the link opens in a new tab or window.
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
+[![Link to start Binder environment](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
 
 ### What is R?
+*5 minute read*
 
 R is a statistical programming language.  As a programming language, R requires that you write **code** that instructs a computer in what to do.  It's not point-and-click software like Excel or SPSS.
 
-R code looks something like this (you can scroll to the right to see the long url in the second line of consolidate):
+R code looks something like this (you can scroll to the right to see the long url in the second line of code):
 
 ```
 library(tidyverse)
@@ -61,9 +68,18 @@ hist(breast_cancer_data$Resistin)
 summary(breast_cancer_data$HOMA)
 ```
 
-Ideally, R code includes helpful hints along the way to help future data users understand what's happening.  We can do that using **comments**, which are lines that the computer knows to ignore and not treat as code.
+Ideally, R code includes helpful hints along the way to help readers understand what's happening.  We can do that using **comments**, which are lines that the computer knows to ignore and not treat as code.
 
-For example, the following may be a bit easier to understand, even if you are brand new to R:
+For example, the following may be a bit easier to understand, even if you are brand new to R.
+
+<div style="background-color:#cceeff;
+padding: 1em;
+margin: 2em;
+border: 1px solid grey;
+text-align: center;
+font-weight: bolder">
+What distinguishes a comment from code in the sample below?</div>
+
 
 ```
 # tidyverse has helpful functions we'll use throughout the analysis
@@ -88,6 +104,7 @@ You can write R code and execute it in many ways, including using the command li
 [Go back to the table of contents](#content)
 
 ### What is RStudio?
+*10 minute read*
 
 RStudio is an **IDE**, or **Integrated Development Environment**, which pulls together (integrates) useful tools like help files, image viewers,  data previews, and version control for people writing (developing) code, and it puts all these tools together in a visually pleasing and helpful environment.  It's an add-on tool that makes working with R easier because it gives extra help and context.
 
@@ -114,21 +131,22 @@ On the other hand, you could run the same code in RStudio and see something like
 
 Using RStudio, you:
 
-* can easily create a script to save your code for reuse later (it's currently "Untitled")
-* get a sneak peek at the data to help you to decide what to do next (here we have 116 rows of 10 columns)
-* see the plot in the same window as everything else
-* also have many other helpful tools, like
-  - a file browser
-  - help tab
-  - history of commands you've run recently
-  - access to the operating system command line
-  - and much more!  
+* Can easily create a script to save your code for reuse later (it's currently "Untitled")
+* Get a sneak peek at the data to help you to decide what to do next (here we have 116 rows of 10 columns)
+* See the plot in the same window as everything else
+* Can use other helpful tools, like
+  - File browser
+  - Help tab
+  - History of commands you've run recently
+  - Operating system terminal
+  - And much more!  
 
 RStudio is the preferred method for most uses of R, and it's generally what we use to teach.
 
 [Go back to the table of contents](#content)
 
 ## Starting RStudio
+*10 minutes hands-on*
 
 You don't have to have R and RStudio installed on your local computer to learn how to use them.  We've provided a simple environment you can use.  It will probably take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).  
 
@@ -145,7 +163,6 @@ padding: 1em;
 border: 1px solid grey;">
 
 ### While You're Waiting...
-
 Do you wonder where you can install R and RStudio, and how much they'll cost your lab?
 
 These are free, open source software (**FOSS**), and both R and RStudio can be installed in a number of different kinds of systems.
@@ -185,6 +202,7 @@ Try describing RStudio's appearance out loud to yourself.  This may seem silly b
 [Go back to the table of contents](#content)
 
 ## Using a File
+*10 minutes hands-on*
 
 Before you are ready to write your own code, you might find it useful to work with an existing file.
 
@@ -213,15 +231,51 @@ Use your mouse to add a cursor somewhere in lines 1-8 (the first comment).  Then
 
 What do you see now in the Console (the bottom left pane)?  Remember that comments are ignored by R, so the first line of actual R code that could be run was line 10.  That's what ends up running (or executing) in the console!
 
-Click to move the cursor to a point in line 15 and click the "Run" button again.
+Click to move the cursor to a point in line 15 and click the "Run" button again.  It may take a while to execute.  When you see the stop sign, you know that something is still running and you have the option of stopping it (but don't, this time).
 
 ![Running code in the Source pane using the Run button](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_run_line_15.gif?raw=true)
 
 ### Data Frames
 
-Now you should have run the line of code that reads in a csv and adds that data to a new **data frame** object.  Data frames consist of data that R arranges into rows and columns, like a spreadsheet.
+Now you should have run the line of code that reads in a csv using `read_csv` and adds that data to a new **data frame** object, which we chose to name `breast_cancer_data`.  Data frames consist of data that R arranges into rows and columns, like a spreadsheet.
 
-That new object appears in your "Environment" tab in the upper right pane.  You can click on the name of the object to open a view of the data in the Source pane.  You can click on the blue arrow beside the name of the object to see the structure of the data frame (column names and data types stored in the columns)
+That new object appears in your "Environment" tab in the upper right pane.  You can click on the blue arrow beside the name of the object to see the structure of the data frame (column names and data types stored in the columns).
+
+You can click on the name of the object to open a view of the data in the Source pane.  Or, in your R code, you can do the same thing using the View command.
+
+### On your own
+
+Now run the next few lines of code.  You can:
+
+* Run them one by one, using the Run button, or
+* Use a keyboard shortcut (command or control + the enter key) to run code one line at a time, or
+* Highlight several complete lines of code (don't start in the middle of a line!) and click the Run button to run all of them.
+
+What does the `hist` command accomplish?  The `summary` command?
 
 
 [Go back to the table of contents](#content)
+
+## RStudio Features
+*5 minute hands-on*
+
+Within RStudio, click on the "Help" tab in the lower right pane.  Choose one promising help topic to click on.  It appears as a new tab or window in your browser.
+
+![Search boxes in RStudio Help tab](https://github.com/arcus/education_r_intensive/blob/main/images/search_boxes_rstudio?raw=true)
+
+There are two search boxes related to help.  The one on the left, just above the help text, includes the phrase "Find in Topic".  This is for searching within the help article you're looking at currently.
+
+The other search box is in the upper right part of the pane and can be used for searching across all available help.  For example, search for "hist" in this search box.
+
+## Terminology
+*5 minute read*
+
+* code: computer instructions written with specific syntax rules: `summary(patients$age)`
+* comment: text within a script that is intended for humans and will not be run by the computer: `# print summary stats here`
+* data frame: data that is organized into rows (observations) and columns (measures / fields)
+* FOSS (Free, Open Source Software): software that can be used free of charge and has very open intellectual property policies
+* IDE (Integrated Development Environment): software that helps people who write code to do so more easily
+* R: a statistical programming language
+* R Console: a bare-bones desktop interface for the R language that comes when you install the R language software
+* RStudio: a fully featured IDE that helps R users write and work with R code more easily
+* script: code and comments saved in a file, useful for saving one's work
