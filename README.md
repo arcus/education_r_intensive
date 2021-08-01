@@ -93,14 +93,14 @@ RStudio is an **IDE**, or **Integrated Development Environment**, which pulls to
 
 #### What if I Don't Use RStudio?
 
-I could include the code above in a simple **R console**, which is what you get when you install R by itself without using RStudio.  In this example shown below, I'm **not** using RStudio.
+I could include the code above in a simple **R console**, which is what you get when you install R by itself without using RStudio.  This isn't the most user friendly experience! In the screen recording shown below, I'm **not** using RStudio, but using the R Console.
 
 |![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.gif?raw=true)|
 |--|
 
-Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell much more about the `breast_cancer_data` datset.  
+Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell much more about the `breast_cancer_data` datset and you don't get tips and support around using R.  For example, here are some questions you may have after watching the animation above.
 
-* What other variables are there?  
+* What does my data look like?  How can I get a sneak peek?  
 * How many rows are in the data?  
 * How can I get more information on how to use the `hist` command?
 * How can I save my work for later re-use and expansion?
@@ -130,9 +130,13 @@ RStudio is the preferred method for most uses of R, and it's generally what we u
 
 ## Starting RStudio
 
-You don't have to have R and RStudio installed on your local computer to learn how to use them.  We've provided a simple environment you can use.  It will probably take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).
+You don't have to have R and RStudio installed on your local computer to learn how to use them.  We've provided a simple environment you can use.  It will probably take a few minutes to load up, especially if it's "cold" (hasn't been used by anyone lately).  
 
-Click below and an RStudio environment will open in your browser window.  We suggest using Chrome for this.  Once you click, while you wait for RStudio to load, come back here and read a bit more.
+If you already clicked on the "launch binder" button as the first activity, you can simply open that tab on your browser.
+
+Didn't click it before?  No worries! Click below and an RStudio environment will open in your browser window.  We suggest using Chrome for this.  
+
+While you wait for RStudio to load, come back here and read a bit more.
 
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
 
@@ -197,8 +201,27 @@ Pro tip:  You'll recognize an R script because it ends in `.R`!</div>
 
 In the lower right of your RStudio window, you should see a pane that has tabs marked "Files", "Plots", "Packages", "Help", and "Viewer".  Click on the "Files" tab and find the R script.  Remember that R scripts end with the file extension `.R`.
 
-Did you find it?  It's called .  Click on the file name and it will open in your "Source" pane, which will appear now that there's an open file.
+Did you find it?  It's called `intro_to_R.R`.  Click on the file name and it will open in a new "Source" pane.  You should see something similar to the graphic below.
 
+![RStudio source pane displays R script](https://github.com/arcus/education_r_intensive/blob/main/images/source_pane.png?raw=true)
+
+### Running Code in RStudio
+
+Use your mouse to add a cursor somewhere in lines 1-8 (the first comment).  Then, click "Run" in the upper right corner of the Source pane:
+
+![Running code in the Source pane using the Run button](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_run.gif?raw=true)
+
+What do you see now in the Console (the bottom left pane)?  Remember that comments are ignored by R, so the first line of actual R code that could be run was line 10.  That's what ends up running (or executing) in the console!
+
+Click to move the cursor to a point in line 15 and click the "Run" button again.
+
+![Running code in the Source pane using the Run button](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_run_line_15.gif?raw=true)
+
+### Data Frames
+
+Now you should have run the line of code that reads in a csv and adds that data to a new **data frame** object.  Data frames consist of data that R arranges into rows and columns, like a spreadsheet.
+
+That new object appears in your "Environment" tab in the upper right pane.  You can click on the name of the object to open a view of the data in the Source pane.  You can click on the blue arrow beside the name of the object to see the structure of the data frame (column names and data types stored in the columns)
 
 
 [Go back to the table of contents](#content)
