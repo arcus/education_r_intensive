@@ -59,7 +59,7 @@ Here's the link.  You don't have to do anything except come back here once the l
 
 R is a statistical programming language.  As a programming language, R requires that you write **code** that instructs a computer in what to do.  It's not point-and-click software like Excel or SPSS.
 
-R code looks something like this (you can scroll to the right to see the long url in the second line of code):
+R code looks something like this (you can scroll over to see the long url in the second line of code):
 
 ```
 library(tidyverse)
@@ -108,14 +108,14 @@ You can write R code and execute it in many ways, including using the command li
 
 RStudio is an **IDE**, or **Integrated Development Environment**, which pulls together (integrates) useful tools like help files, image viewers,  data previews, and version control for people writing (developing) code, and it puts all these tools together in a visually pleasing and helpful environment.  It's an add-on tool that makes working with R easier because it gives extra help and context.
 
-#### What if I Don't Use RStudio?
+#### Without RStudio
 
-I could include the code above in a simple **R console**, which is what you get when you install R by itself without using RStudio.  This isn't the most user friendly experience! In the screen recording shown below, I'm **not** using RStudio, but using the R Console.
+We could run the code above in a simple **R console**, which is what you get when you install R by itself without using RStudio.  This isn't the most user friendly experience! In the screen recording shown below, we are **not** using RStudio, but rather the R Console.
 
 |![R.app, or the R Console](https://github.com/arcus/education_r_intensive/blob/main/images/r_console.gif?raw=true)|
 |--|
 
-Above, you can see that the R console had to open a new program (in my Mac, it's the Quartz viewer) to display the histogram.  But you can't tell much more about the `breast_cancer_data` datset and you don't get tips and support around using R.  For example, here are some questions you may have after watching the animation above.
+Above, you can see that the R console had to open a new program (in a Mac, it's the Quartz viewer) to display the histogram.  You can't tell much about the `breast_cancer_data` datset and you don't get tips and support around using R.  For example, here are some questions you may have after watching the animation above.
 
 * What does my data look like?  How can I get a sneak peek?  
 * How many rows are in the data?  
@@ -131,7 +131,7 @@ On the other hand, you could run the same code in RStudio and see something like
 
 Using RStudio, you:
 
-* Can easily create a script to save your code for reuse later (it's currently "Untitled")
+* Can easily create a script to save your code for reuse later (it's currently "Untitled1")
 * Get a sneak peek at the data to help you to decide what to do next (here we have 116 rows of 10 columns)
 * See the plot in the same window as everything else
 * Can use other helpful tools, like
@@ -206,7 +206,7 @@ Try describing RStudio's appearance out loud to yourself.  This may seem silly b
 
 Before you are ready to write your own code, you might find it useful to work with an existing file.
 
-There are several ways to write R code using RStudio.  We'll start with an R script.  An R script is a text file that includes all the R code and any comments that you want to save in a file so you don't lose track of a process.  For example, let's say that I know I'll want to work on some data stored in a .csv file, and it will take me several days or weeks to slowly write the code.  I'll want to use an R script to store what I've figured out so far.
+There are several ways to write R code using RStudio.  We'll start with an R script.  An R script is a text file that includes all the R code and any comments that you want to save in a file so you don't lose track of a process.  For example, let's say that we know we'll want to work on some data stored in a .csv file, and it will take me several days or weeks to slowly write the code.  We can use an R script to store what we've figured out so far.
 
 <div style="background-color:#fefebb;
 padding: 1em;
@@ -219,29 +219,33 @@ Pro tip:  You'll recognize an R script because it ends in `.R`!</div>
 
 In the lower right of your RStudio window, you should see a pane that has tabs marked "Files", "Plots", "Packages", "Help", and "Viewer".  Click on the "Files" tab and find the R script.  Remember that R scripts end with the file extension `.R`.
 
-Did you find it?  It's called `intro_to_R.R`.  Click on the file name and it will open in a new "Source" pane.  You should see something similar to the graphic below.
+Did you find it?  It's called `intro_to_R.R`.  Click on the file name and it will open in a new "Source" pane which will appear as the upper left pane.  You should see something similar to the graphic below.
 
 ![RStudio source pane displays R script](https://github.com/arcus/education_r_intensive/blob/main/images/source_pane.png?raw=true)
 
 ### Running Code in RStudio
 
-Use your mouse to add a cursor somewhere in lines 1-8 (the first comment).  Then, click "Run" in the upper right corner of the Source pane:
+Use your mouse to add a cursor (be careful not to highlight text) somewhere in lines 1-8.  These lines make up our first comment.  Then, click "Run" in the upper right corner of the Source pane:
 
 ![Running code in the Source pane using the Run button](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_run.gif?raw=true)
 
 What do you see now in the Console (the bottom left pane)?  Remember that comments are ignored by R, so the first line of actual R code that could be run was line 10.  That's what ends up running (or executing) in the console!
 
-Click to move the cursor to a point in line 15 and click the "Run" button again.  It may take a while to execute.  When you see the stop sign, you know that something is still running and you have the option of stopping it (but don't, this time).
+Click to move the cursor to a point in line 15 and click the "Run" button again.  
 
 ![Running code in the Source pane using the Run button](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_run_line_15.gif?raw=true)
 
+It may take a while to execute, and you might see a red "Stop Sign" emblem appear in the upper right of your console pane.  When you see the stop sign, you know that something is still running and you have the option of stopping it (but don't, this time).
+
 ### Data Frames
 
-Now you should have run the line of code that reads in a csv using `read_csv` and adds that data to a new **data frame** object, which we chose to name `breast_cancer_data`.  Data frames consist of data that R arranges into rows and columns, like a spreadsheet.
+By running line 15, you have instructed the computer to read in a csv using `read_csv` and to add that data to a new **data frame** object, which will be called `breast_cancer_data`.  
 
-That new object appears in your "Environment" tab in the upper right pane.  You can click on the blue arrow beside the name of the object to see the structure of the data frame (column names and data types stored in the columns).
+Data frames consist of data arranged into rows and columns, like a spreadsheet.  Each row is an observation (in our case, a patient) and each column is a measurement (like age and insulin values).
 
-You can click on the name of the object to open a view of the data in the Source pane.  Or, in your R code, you can do the same thing using the View command.
+The new object, `breast_cancer_data`, ppears in your "Environment" tab in the upper right pane.  You can click on the small blue icon beside the name of the object to see the structure of the data frame (column names and data types stored in the columns).
+
+You can also click on the name of the object to open a view of the data in the Source pane.  Or, in your R code, you can do the same thing using the `View` command.
 
 ### On your own
 
@@ -251,8 +255,9 @@ Now run the next few lines of code.  You can:
 * Use a keyboard shortcut (command or control + the enter key) to run code one line at a time, or
 * Highlight several complete lines of code (don't start in the middle of a line!) and click the Run button to run all of them.
 
-What does the `hist` command accomplish?  The `summary` command?
+It won't hurt to run these lines several times, so try various methods!
 
+What does the `hist` command accomplish?  The `summary` command? `View`?  
 
 [Go back to the table of contents](#content)
 
@@ -285,6 +290,7 @@ Use the "Tools" menu at the top of RStudio, choose "Global Options", then  "Appe
 
 Experiment with editor settings (font size and theme), and if you want to try it out, choose "Apply".
 
+[Go back to the table of contents](#content)
 
 ## Terminology
 *5 minute read*
@@ -298,3 +304,5 @@ Experiment with editor settings (font size and theme), and if you want to try it
 * R Console: a bare-bones desktop interface for the R language that comes when you install the R language software
 * RStudio: a fully featured IDE that helps R users write and work with R code more easily
 * script: code and comments saved in a file, useful for saving one's work
+
+[Go back to the table of contents](#content)
