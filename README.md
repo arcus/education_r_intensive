@@ -12,7 +12,7 @@ This module provides learners with an approachable introduction to the R languag
 
 **Pre-requisites**: It is helpful if learners have used data in a tabular (table-shaped) format, with rows and columns.  Examples of this kind of data include comma separated values files (.csv) and spreadsheets (for example, Microsoft Excel).  Learners do *not* need to have access to R or RStudio on their own computers.  
 
-**Format**: This module uses text, still images, and video.  Audio is optional.
+**Format**: This module uses text, still images, hands-on activities, and video.  Audio is optional.
 
 **Learning Objectives**:  After completion of this module, learners will be able to:
 
@@ -31,12 +31,16 @@ Feel free to check these off as you go!
 * <input type="checkbox"> :computer: 2 minute hands-on activity: [Lesson Preparation](#Lesson-Preparation)
 * <input type="checkbox"> :book: 5 minute read: [What is R?](#What-is-R)
 * <input type="checkbox"> :book: 10 minute read: [What is RStudio?](#What-is-RStudio)
-* <input type="checkbox"> :computer: 10 minute hands-on activity: [Starting RStudio](#Starting-RStudio)
+* <input type="checkbox"> :computer: 5 minute hands-on activity: [Starting RStudio](#Starting-RStudio)
 * <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#Using-a-File)
 * <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#Why-Use-R-and-RStudio)
 * <input type="checkbox"> :computer: 5 minute hands-on activity: [RStudio Features](#rstudio-features)
 * <input type="checkbox"> :book: 5 minute read: [Terminology](#Terminology)
-* <input type="checkbox"> *Optional* :open_file_folder: 15 minute read/watch: [Additional Resources](#Additional-Resources)
+* <input type="checkbox"> *Optional* :open_file_folder: 10 minute watch/listen: [Additional Resources](#Additional-Resources)
+  - <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Hands-On Activities Demo](#Hands-On-Activities-Demo).  This is a video demo of the hands-on activities we've asked you to do in this module.  
+  - <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Researchers: Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (section of interest is around 4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
+* <input type="checkbox"> :book: 5 minute feedback: [Feedback](#Feedback)
+
 
 ## Lesson Preparation
 
@@ -51,6 +55,8 @@ It will open in a new tab or window, and you can simply return here to continue 
 Here's the link.  You don't have to do anything except come back here once the link opens in a new tab or window.
 
 [![Link to start Binder environment](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/arcus/education_r_intensive/main?urlpath=rstudio) **← Click the "launch binder" button!**
+
+[Go back to the table of contents](#Contents)
 
 ## What is R?
 
@@ -100,7 +106,7 @@ summary(breast_cancer_data$HOMA)
 
 You can write R code and execute it in many ways, including using the command line, the R console, and in a Jupyter notebook.  Here, however, we're going to concentrate on using RStudio.
 
-[Go back to the table of contents](#content)
+[Go back to the table of contents](#Contents)
 
 ## What is RStudio?
 
@@ -145,7 +151,7 @@ Using RStudio, you:
 
 RStudio is the preferred method for most uses of R, and it's generally what we use to teach.
 
-[Go back to the table of contents](#content)
+[Go back to the table of contents](#Contents)
 
 ## Starting RStudio
 
@@ -173,16 +179,17 @@ These are free, open source software (**FOSS**), and both R and RStudio can be i
 
 You can run R and RStudio:
 
-* from your local computer (download a Windows, Mac, or linux version)
-* on a cloud service provider like [RStudio.cloud](https://rstudio.cloud)
-* on a server that your research center provides
-* on a temporary environment someone prepares for you, like our Pangeo Binder environment
+* From your local computer (download a Windows, Mac, or linux version of R](https://cran.rstudio.com/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download))
+* On a cloud service provider like [RStudio.cloud](https://rstudio.cloud)
+* On a server that your research center provides
+* On a temporary environment someone prepares for you, like our Pangeo Binder environment
 
 A to-do list for you to consider:
 
 * <input type="checkbox"> Try installing [R](https://cran.rstudio.com/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download) to your computing device.
 * <input type="checkbox"> Not ready to commit to downloading R and RStudio yet?  Create a free [RStudio.cloud](https://rstudio.cloud) account!
 * <input type="checkbox"> Ask your colleagues who use R and RStudio where they do their work in R, and if there are any steps you need to take to get access (like request access to a server at your lab or workplace)
+* <input type="checkbox"> [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This brief article (2 minute read) introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
 
 </div>
 
@@ -203,7 +210,7 @@ Take a look around.  What do you see?  How would you describe the layout of pane
 
 Try describing RStudio's appearance out loud to yourself.  This may seem silly but it is another way to consolidate your learning.
 
-[Go back to the table of contents](#content)
+[Go back to the table of contents](#Contents)
 
 ## Using a File
 
@@ -230,7 +237,7 @@ Did you find it?  It's called `intro_to_R.R`.  Click on the file name and it wil
 
 ### Running Code in RStudio
 
-Use your mouse to add a cursor (be careful not to highlight text) somewhere in lines 1-8.  These lines make up our first comment.  Then, click "Run" in the upper right corner of the Source pane:
+Use your mouse to add a cursor (be careful not to highlight text) somewhere in lines 1-8.  These lines make up our first comments.  Then, click "Run" in the upper right corner of the Source pane:
 
 ![Running code in the Source pane using the Run button](https://github.com/arcus/education_r_intensive/blob/main/images/rstudio_run.gif?raw=true)
 
@@ -264,7 +271,7 @@ It won't hurt to run these lines several times, so try various methods!
 
 What does the `hist` command accomplish?  The `summary` command? `View`?  
 
-[Go back to the table of contents](#content)
+[Go back to the table of contents](#Contents)
 
 ## Why Use R and RStudio?
 
@@ -279,6 +286,10 @@ R and other free, open source, and scripted (code-based) methods of data analysi
 * Scripted languages can do multiple stages of data analysis, such as downloading data, cleaning and reshaping data, performing statistical tests, displaying data visualizations, and more.  
 
 There are many reasons why the research community is pivoting to languages like R.  While learning a new technical skill can be time consuming, working with R will pay off in the long run, because it makes it easier for you to re-run your analyses, describe your methods precisely, share your work with colleagues, and meet the requirements of funders and publications when it comes to reproducible research.
+
+Want to hear more?  Watch around 4 minutes of one of our optional additionl resources:
+
+- <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Researchers: Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (section of interest is around 4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
 
 ## RStudio Features
 
@@ -310,11 +321,11 @@ Use the "Tools" menu at the top of RStudio, choose "Global Options", then  "Appe
 
 Experiment with editor settings (font size and theme), and if you want to try it out, choose "Apply".
 
-[Go back to the table of contents](#content)
+[Go back to the table of contents](#Contents)
 
 ## Terminology
 
-*5 minutes*
+*5 minute read*
 
 * code: computer instructions written with specific syntax rules: `summary(patients$age)`
 * comment: text within a script that is intended for humans and will not be run by the computer: `# print summary stats here`
@@ -326,20 +337,50 @@ Experiment with editor settings (font size and theme), and if you want to try it
 * RStudio: a fully featured IDE that helps R users write and work with R code more easily
 * script: code and comments saved in a file, useful for saving one's work
 
-[Go back to the table of contents](#content)
+[Go back to the table of contents](#Contents)
 
 ## Additional Resources
 
-*15 minutes, optional*
+*10 minutes watch, optional*
 
 - <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Hands-On Activities Demo](#Hands-On-Activities-Demo).  This is a video demo of the hands-on activities we've asked you to do in this module.
 - <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Researchers: Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (stop after this section, around 4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
-- <input type="checkbox"> *Optional* :movie_camera: 5 minute read: [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
 
 ### Hands-On Activities Demo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8rKGHXSXlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Go back to the table of contents](#Contents)
+
+
 ### Researchers: Why R?
 
+You can stop this video after around 4 minutes.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ids4FO5nTBE?start=439" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Go back to the table of contents](#Contents)
+
+## Feedback
+
+*5 minute feedback*
+
+In the beginning, we stated some goals.
+
+**Learning Objectives**:  After completion of this module, learners will be able to:
+
+* Describe what R is and what RStudio is
+* Understand what a script is and how using a script can improve research
+* Execute given R code within RStudio
+* Explain what a data frame is
+* Use the Environment tab within RStudio to examine a data frame
+
+We ask you to fill out a brief (5 minutes or less) survey to let us know:
+
+* If we achieved the learning objectives
+* If the module difficulty was appropriate
+* If we gave you the experience you expected
+
+We gather this information in order to iteratively improve our work.  Thank you in advance for filling out [our brief survey](https://redcap.chop.edu/surveys/?s=KHTXCXJJ93&module_name=%22Intro+to+R+and+RStudio%22)
+
+[Go back to the table of contents](#Contents)
