@@ -35,11 +35,8 @@ Feel free to check these off as you go!
 * <input type="checkbox"> :computer: 10 minute hands-on activity: [Using a File](#Using-a-File)
 * <input type="checkbox"> :book: 5 minute read: [Why Use R and RStudio?](#Why-Use-R-and-RStudio)
 * <input type="checkbox"> :computer: 5 minute hands-on activity: [RStudio Features](#rstudio-features)
-* <input type="checkbox"> :book: 5 minute read: [Terminology](#terminology)
-* <input type="checkbox"> *Optional* :open_file_folder: Additional Resources:
-    - <input type="checkbox"> *Optional* :movie_camera: 10 minute video demonstrating hands-on activities
-    - [Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (watch for around 3-4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
-    - [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
+* <input type="checkbox"> :book: 5 minute read: [Terminology](#Terminology)
+* <input type="checkbox"> *Optional* :open_file_folder: 15 minute read/watch: [Additional Resources](#Additional-Resources)
 
 ## Lesson Preparation
 
@@ -271,6 +268,8 @@ What does the `hist` command accomplish?  The `summary` command? `View`?
 
 ## Why Use R and RStudio?
 
+*5 minutes*
+
 Fine, you now know a bit more about R and RStudio, but why does this matter?  You may already know how to conduct statistical data analysis in tools like SPSS, Excel, or other software.  Why, then, learn R?
 
 R and other free, open source, and scripted (code-based) methods of data analysis are widely considered more reproducible because:
@@ -315,7 +314,7 @@ Experiment with editor settings (font size and theme), and if you want to try it
 
 ## Terminology
 
-*5 minute read*
+*5 minutes*
 
 * code: computer instructions written with specific syntax rules: `summary(patients$age)`
 * comment: text within a script that is intended for humans and will not be run by the computer: `# print summary stats here`
@@ -328,3 +327,19 @@ Experiment with editor settings (font size and theme), and if you want to try it
 * script: code and comments saved in a file, useful for saving one's work
 
 [Go back to the table of contents](#content)
+
+## Additional Resources
+
+*15 minutes, optional*
+
+- <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Hands-On Activities Demo](#Hands-On-Activities-Demo).  This is a video demo of the hands-on activities we've asked you to do in this module.
+- <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Researchers: Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (stop after this section, around 4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
+- <input type="checkbox"> *Optional* :movie_camera: 5 minute read: [Cloud Tools for the Unconvinced](https://education.arcus.chop.edu/r-python-cloud/).  This briefly introduces [RStudio.cloud](https://rstudio.cloud) and includes a link to a project you can look at, copy, and learn from.
+
+### Hands-On Activities Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O8rKGHXSXlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Researchers: Why R?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ids4FO5nTBE?start=439" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
