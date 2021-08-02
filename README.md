@@ -277,17 +277,19 @@ What does the `hist` command accomplish?  The `summary` command? `View`?
 
 *5 minutes*
 
-Fine, you now know a bit more about R and RStudio, but why does this matter?  You may already know how to conduct statistical data analysis in tools like SPSS, Excel, or other software.  Why, then, learn R?
+Fine, you now know a bit more about R and RStudio, but why does this matter?  You may already know how to conduct statistical data analysis in tools like SPSS, Excel, or other software.  Why, then, learn R?  Is R only for professional data scientists?
+
+R and RStudio are great tools for professional data scientists, but they are also increasingly part of the research tool kit, much like other lab equipment that researchers have to learn to use.  This is because the **reproducibility crisis** of studies that cannot be reproduced or fail to reproduce can be ameliorated in part by the use of scripted data analysis.
 
 R and other free, open source, and scripted (code-based) methods of data analysis are widely considered more reproducible because:
 
 * Anyone can obtain the software needed to use R scripts, with no license cost.
 * Operations you perform to data are recorded in a script, which means they are not lost to history in the same way you might forget to precisely record a step you took in, say, Excel.
-* Scripted languages can do multiple stages of data analysis, such as downloading data, cleaning and reshaping data, performing statistical tests, displaying data visualizations, and more.  
+* Scripted languages can do multiple stages of data analysis in a single tool, such as downloading data, cleaning and reshaping data, performing statistical tests, displaying data visualizations, and more.  
 
 There are many reasons why the research community is pivoting to languages like R.  While learning a new technical skill can be time consuming, working with R will pay off in the long run, because it makes it easier for you to re-run your analyses, describe your methods precisely, share your work with colleagues, and meet the requirements of funders and publications when it comes to reproducible research.
 
-Want to hear more?  Watch around 4 minutes of one of our optional additionl resources:
+Want to hear more?  Watch around 4 minutes of one of our optional additional resources:
 
 - <input type="checkbox"> *Optional* :movie_camera: 5 minute watch/listen: [Researchers: Why R?](https://www.youtube.com/watch?v=Ids4FO5nTBE&t=07m19s) (section of interest is around 4 minutes).  This is a clip from a longer presentation given to learners at the Children's Hospital of Philadelphia.
 
@@ -301,7 +303,7 @@ We're only going to touch on three of many useful tools here.  When time permits
 
 Within RStudio, click on the "Help" tab in the lower right pane.  Choose one promising help topic to click on.  It appears as a new tab or window in your browser.
 
-![Search boxes in RStudio Help tab](https://github.com/arcus/education_r_intensive/blob/main/images/search_boxes_rstudio?raw=true)
+![Search boxes in RStudio Help tab](https://github.com/arcus/education_r_intensive/blob/main/images/search_boxes_rstudio.png?raw=true)
 
 There are two search boxes related to help.  The one on the left, just above the help text, includes the phrase "Find in Topic".  This is for searching within the help article you're looking at currently.
 
@@ -313,7 +315,7 @@ Within RStudio, click on the "History" tab in the upper right pane.  The command
 
 Choose one of the commands by clicking on it, and choose the "To Console" button.  The code should now appear in the console in the lower left pane, ready for you to hit enter and run that command anew.
 
-![Search boxes in RStudio Help tab](https://github.com/arcus/education_r_intensive/blob/main/images/history_rstudio?raw=true)
+![History Tab](https://github.com/arcus/education_r_intensive/blob/main/images/history_rstudio.png?raw=true)
 
 ### Display
 
@@ -334,6 +336,7 @@ Experiment with editor settings (font size and theme), and if you want to try it
 * IDE (Integrated Development Environment): software that helps people who write code to do so more easily
 * R: a statistical programming language
 * R Console: a bare-bones desktop interface for the R language that comes when you install the R language software
+* Reproducibility crisis: the problem in peer-reviewed research in which studies *cannot* be reproduced or replicated because of insufficient information, or in which studies *fail* to be reproduced or replicated because of problems in the initial research
 * RStudio: a fully featured IDE that helps R users write and work with R code more easily
 * script: code and comments saved in a file, useful for saving one's work
 
@@ -349,9 +352,6 @@ Experiment with editor settings (font size and theme), and if you want to try it
 ### Hands-On Activities Demo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O8rKGHXSXlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-[Go back to the table of contents](#Contents)
-
 
 ### Researchers: Why R?
 
@@ -381,6 +381,6 @@ We ask you to fill out a brief (5 minutes or less) survey to let us know:
 * If the module difficulty was appropriate
 * If we gave you the experience you expected
 
-We gather this information in order to iteratively improve our work.  Thank you in advance for filling out [our brief survey](https://redcap.chop.edu/surveys/?s=KHTXCXJJ93&module_name=%22Intro+to+R+and+RStudio%22)
+We gather this information in order to iteratively improve our work.  Thank you in advance for filling out [our brief survey](https://redcap.chop.edu/surveys/?s=KHTXCXJJ93&module_name=%22Intro+to+R+and+RStudio%22)!
 
 [Go back to the table of contents](#Contents)
