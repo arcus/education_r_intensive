@@ -218,7 +218,7 @@ Try describing RStudio's appearance out loud to yourself.  This may seem silly b
 
 Before you are ready to write your own code, you might find it useful to work with an existing file.
 
-There are several ways to write R code using RStudio.  We'll start with an R script.  An R script is a text file that includes all the R code and any comments that you want to save in a file so you don't lose track of a process.  For example, let's say that we know we'll want to work on some data stored in a .csv file, and it will take me several days or weeks to slowly write the code.  We can use an R script to store what we've figured out so far.
+There are several ways to write R code using RStudio.  We'll start with an R script.  An R script is a text file that includes all the R code and any comments that you want to save in a file so you don't lose track of a process.  For example, let's say that we know we'll want to work on some data stored in a .csv file, and it will take us several days or weeks to slowly write the code.  We can use an R script to store what we've figured out so far.
 
 <div style="background-color:#fefebb;
 padding: 1em;
@@ -255,7 +255,7 @@ By running line 15, you have instructed the computer to read in a csv using `rea
 
 Data frames consist of data arranged into rows and columns, like a spreadsheet.  Each row is an observation (in our case, a patient) and each column is a measurement (like age and insulin values).
 
-The new object, `breast_cancer_data`, ppears in your "Environment" tab in the upper right pane.  You can click on the small blue icon beside the name of the object to see the structure of the data frame (column names and data types stored in the columns).
+The new object, `breast_cancer_data`, appears in your "Environment" tab in the upper right pane.  You can click on the small blue icon beside the name of the object to see the structure of the data frame (column names and data types stored in the columns).
 
 You can also click on the name of the object to open a view of the data in the Source pane.  Or, in your R code, you can do the same thing using the `View` command.
 
